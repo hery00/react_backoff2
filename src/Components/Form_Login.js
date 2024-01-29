@@ -41,6 +41,8 @@ function Form_Login(){
     <div className="card">
       <div className="card-body">
         <h5 className="card-title">Se connecter</h5>
+        <p>Login: tokyramanalina@gmail.com</p>
+        <p>mot de passe:123</p>
         <form className="row g-3" onSubmit={handleSubmit}>
           <div className="col-md-6">
             <div className="form-floating">
