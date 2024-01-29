@@ -1,0 +1,25 @@
+.glass-container {
+  
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .glass-form {
+    backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+  }
+  
+  .card-title {
+    color: #fff;
+  }
+  
