@@ -2,7 +2,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import '../assets/css/table.css';
+import './../assets/css/table.css';
 
 const Tableau = () => {
     const [data, setData] = useState([]);

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../assets/css/login.css';
-import '../Images/back.jpg';
+import './../assets/css/login.css';
+import './../Images/back.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Form_Login() {
