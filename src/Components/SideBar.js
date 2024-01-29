@@ -14,7 +14,16 @@ function SideBar()
               <span>Accueil</span>
             </Link>
           </li>
-    
+          <li className="nav-item">
+            <Link className="nav-link collapsed" data-bs-target=" components-nav" data-bs-toggle="collapse" to="/Terrain">
+              <i className="bi bi-menu-button-wide"></i><span>Terrain</span>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link collapsed" data-bs-target=" components-nav" data-bs-toggle="collapse" to="/Parcelle">
+              <i className="bi bi-menu-button-wide"></i><span>Parcelle</span>
+            </Link>
+          </li>
           <li className="nav-item">
             <Link className="nav-link collapsed" data-bs-target=" components-nav" data-bs-toggle="collapse" to="/Statistiques">
               <i className="bi bi-menu-button-wide"></i><span>Statistiques</span>

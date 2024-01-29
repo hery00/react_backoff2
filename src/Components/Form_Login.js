@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './../assets/css/login.css';
 import './../Images/back.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
-function Form_Login() {
+function Form_Login(){
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -11,25 +12,26 @@ function Form_Login() {
     e.preventDefault();
   
     try {
-      const url = new URL('http://projetcloud2024-production.up.railway.app/api/login');
-      url.searchParams.append('email', email);
-      url.searchParams.append('pwd', password);
-  
+      const url = 'https://projetcloud2024-production.up.railway.app/api/login';
+
       const response = await fetch(url, 
       {
-        method: 'GET',
+        method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
+        body: JSON.stringify({
+          email: email,
+          pwd: password,
+        }),
       });
   
       if (!response.ok) {
         throw new Error('La réponse du réseau n\'était pas correcte');
       }
-      window.location.href="/Accueil"
+      window.location.href="/Accueil";
        
     } catch (error) {
-     
       console.error('Une erreur s\'est produite lors de la connexion :', error);
     }
   };
@@ -72,9 +74,10 @@ function Form_Login() {
             <button type="submit" className="btn btn-primary">
               Valider
             </button>
-            <button type="reset" className="btn btn-secondary">
+            <Link to="/Form_Inscription"><button type="button" className="btn btn-secondary">
               S'inscrire
             </button>
+            </Link>
           </div>
         </form>
       </div>

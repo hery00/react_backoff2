@@ -69,7 +69,7 @@ const Tableau_Categorie = () => {
   return (
     <div>
        
-        
+       {/* <span><Link to={/Form_Parcelle}><Bouton name="Inserer"/></span></Link> */}
     
       <table>
             <thead>
@@ -81,9 +81,11 @@ const Tableau_Categorie = () => {
                 <th>Type de culture</th>
                 <th>Rendement par pieds</th>
             </tr>
+            
             </thead>
             <tbody>
-            {data.map((item) => (
+            {data.map((item) =>
+            (
             <tr>
                 <td>{item.nom_categorie}</td>
                 <td>{item.rendement_par_pieds}</td>
