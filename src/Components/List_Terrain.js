@@ -12,7 +12,7 @@ const List_Terrain = () => {
     const fetchData = async () => {
       try {
     
-        const response = await fetch('http://projetcloud2024-production.up.railway.app/api/Terrain/listsTerrain');
+        const response = await fetch('https://projetcloud2024-production.up.railway.app/api/Terrain/listsTerrain');
      
         if (!response.ok) {
           throw new Error('Network response was not ok');
