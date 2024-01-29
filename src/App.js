@@ -9,6 +9,7 @@ import List_Parcelle_Terrain from './Components/List_Parcelle_Terrain';
 import Recherche from './Components/Recherche';
 import List_Terrain from './Components/List_Terrain';
 import Form_Inscription from './Components/Form_Inscription';
+import List_Parcelle from './Components/List_Parcelle';
 
 const router=createBrowserRouter([
 
