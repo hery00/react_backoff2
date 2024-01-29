@@ -13,7 +13,7 @@ const List_Parcelle_Terrain = () => {
     const fetchData = async () => {
       try {
         // Perform the fetch request
-        const response = await fetch('https://projetcloud2024-production.up.railway.app/api/Parcelle/listParcelleterrain');
+        const response = await fetch('https://cloud2024-production-30a9.up.railway.app/api/Parcelle/listParcelleterrain');
         
         // Check if the request was successful
         if (!response.ok) {

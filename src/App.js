@@ -51,6 +51,9 @@ const router=createBrowserRouter([
     path:'/Parcelle',
     element: 
     <div>
+        <Header />
+        <SideBar />
+        <List_Parcelle/>
 
     </div>
   },

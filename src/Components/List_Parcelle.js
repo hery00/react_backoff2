@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { useEffect, useState } from 'react';
-const List_Terrain = () => {
+const List_Parcelle = () => {
 
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
@@ -12,7 +12,7 @@ const List_Terrain = () => {
     const fetchData = async () => {
       try {
     
-        const response = await fetch('http://projetcloud2024-production.up.railway.app/api/Terrain/listsTerrain');
+        const response = await fetch('https://cloud2024-production-30a9.up.railway.app/api/Parcelle/lists_parcelle');
      
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -92,5 +92,5 @@ const List_Terrain = () => {
   )
 }
 
-export default List_Terrain
+export default List_Parcelle
 

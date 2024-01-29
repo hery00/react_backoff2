@@ -8,7 +8,7 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       if (username && password) {
-        const response = await fetch('http://projetcloud2024-production.up.railway.app/api/login?email=rak@gmail.com&pwd=aaaa', {
+        const response = await fetch('https://cloud2024-production-30a9.up.railway.app/api/login?email=rak@gmail.com&pwd=aaaa', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
